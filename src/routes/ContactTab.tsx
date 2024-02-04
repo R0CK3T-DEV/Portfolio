@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 type SubmitResponse = {
@@ -11,17 +11,10 @@ const toastStyle = {
     borderRadius: "10px",
     background: "#1f2937",
     color: "#fff",
-};
+};*/
 
 export function ContactTab() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [content, setContent] = useState("");
-
-    const [sending, setSending] = useState(false);
-
-    const handleSubmit = async () => {
+    /* const handleSubmit = async () => {
         setSending(true);
         const promise = fetch("https://" + import.meta.env.VITE_CONTACT_URL, {
             method: "POST",
@@ -59,14 +52,28 @@ export function ContactTab() {
                 style: toastStyle,
             },
         );
-    };
+    }; */
 
     return (
         <div className="tab">
             <div className="card">
                 <h2 className="tab-title">CONTACT</h2>
 
-                <div
+                <p className="text-center">
+                    Due to limitations from the hosting provider, I cannot
+                    provide you with a contact form. Instead, I kindly ask you
+                    to send me an email to this address:{" "}
+                    <a href="mailto:ezequielzapata2023@gmail.com">
+                        ezequielzapata2023@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    );
+}
+
+/*
+    <div
                     aria-roledescription="form"
                     style={{
                         maxHeight: "60vh",
@@ -75,7 +82,6 @@ export function ContactTab() {
                     }}
                     className="flex flex-col items-start justify-center gap-4"
                 >
-                    {/* name */}
                     <div className="form-group">
                         <label htmlFor="nameContact" className="form-label">
                             FIRST & LAST NAME
@@ -89,7 +95,6 @@ export function ContactTab() {
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    {/* email */}
                     <div className="form-group">
                         <label htmlFor="nameContact" className="form-label">
                             E-MAIL
@@ -103,7 +108,6 @@ export function ContactTab() {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-                    {/* subject */}
                     <div className="form-group">
                         <label htmlFor="nameContact" className="form-label">
                             SUBJECT
@@ -117,7 +121,6 @@ export function ContactTab() {
                             onChange={(e) => setSubject(e.target.value)}
                         />
                     </div>
-                    {/* content */}
                     <div className="form-group">
                         <label htmlFor="nameContact" className="form-label">
                             CONTENT
@@ -141,7 +144,4 @@ export function ContactTab() {
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-    );
-}
+*/

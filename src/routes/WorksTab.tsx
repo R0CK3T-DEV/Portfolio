@@ -11,10 +11,47 @@ type Work = {
     thumbnail: string;
 };
 
-export function WorksTab() {
-    const [works, setWorks] = useState<Work[]>([]);
+const localWorks: Work[] = [
+    {
+        name: "AnonsAsk",
+        description:
+            "An anonymous questions website. It's somewhat old, and I'm currently re-making it using ReactJS, but it's a good project nontheless.",
+        type: "Web development",
+        releaseDate: "2023",
+        technologies: [
+            "PHP",
+            "HTML",
+            "Bootstrap",
+            "CSS",
+            "JavaScript",
+            "MariaDB",
+        ],
+        link: "https://anonsask.a0001.net",
+        thumbnail: "/img/works/anonsask.png",
+    },
+    {
+        name: "Portfolio",
+        description:
+            "A website that showcases my current skills, as well as my projects, and any that I might participate in.",
+        type: "Web development",
+        releaseDate: "Work in progress",
+        technologies: [
+            "ReactJS",
+            "Vite",
+            "TailwindCSS",
+            "HTML",
+            "JavaScript",
+            "CSS",
+        ],
+        link: "",
+        thumbnail: "/img/banner_optimized.png",
+    },
+];
 
-    useEffect(function fetchWorks() {
+export function WorksTab() {
+    const [works] = useState<Work[]>(localWorks);
+
+    /*useEffect(function fetchWorks() {
         fetch("/works.json")
             .then((res) => res.json())
             .then((data: Work[] | undefined) => {
@@ -22,7 +59,7 @@ export function WorksTab() {
                     setWorks(data);
                 }
             });
-    }, []);
+    }, []);*/
 
     return (
         <div className="tab" aria-roledescription="tab pane">
