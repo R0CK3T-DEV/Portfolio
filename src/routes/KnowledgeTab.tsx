@@ -39,7 +39,13 @@ const dummyData: { known: KnowledgeData[]; learning: KnowledgeData[] } = {
         {
             language:
                 "(Some) things related to the ones above that I know how to use are:",
-            content: "JSON, REST API protocol, JSON Web Tokens, MariaDB",
+            content:
+                "JSON, REST API protocol, JSON Web Tokens, SQL Databases (mainly MariaDB)",
+        },
+        {
+            language: "Graphic Design",
+            content:
+                "Intermediate graphic design knowledge, mainly centered around User Interface",
         },
     ],
     learning: [
