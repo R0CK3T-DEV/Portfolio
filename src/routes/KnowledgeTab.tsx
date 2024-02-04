@@ -83,14 +83,12 @@ export function KnowledgeTab() {
                     style={{ maxHeight: "50vh" }}
                 >
                     <h4 className="text-lg font-bold">THINGS I KNOW</h4>
-                    <p>(anything you should pay me for)</p>
 
                     {GetList(dummyData.known)}
 
                     <h4 className="mt-4 text-lg font-bold">
                         THINGS I'M LEARNING
                     </h4>
-                    <p>(anything you should NOT pay me for. or maybe yes)</p>
 
                     {GetList(dummyData.learning)}
                 </div>
