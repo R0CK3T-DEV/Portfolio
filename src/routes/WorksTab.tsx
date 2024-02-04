@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type Work = {
-    key: number;
     name: string;
     type: string;
     releaseDate: string;
     description: string;
-    technologies: [string];
+    technologies: string[];
     link: string;
     thumbnail: string;
 };
