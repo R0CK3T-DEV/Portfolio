@@ -11,7 +11,8 @@ const dummyData: { known: KnowledgeData[]; learning: KnowledgeData[] } = {
             content: [
                 {
                     language: "ReactJS",
-                    content: "Front-end UI development",
+                    content:
+                        "Front-end UI development (CSS, TailwindCSS, and more)",
                 },
                 {
                     language: "NodeJS",
@@ -37,8 +38,8 @@ const dummyData: { known: KnowledgeData[]; learning: KnowledgeData[] } = {
         },
         {
             language:
-                "Some things related to these that I know how to use are:",
-            content: "JSON, REST API protoco, JSON Web Tokens, MariaDB",
+                "(Some) things related to the ones above that I know how to use are:",
+            content: "JSON, REST API protocol, JSON Web Tokens, MariaDB",
         },
     ],
     learning: [
